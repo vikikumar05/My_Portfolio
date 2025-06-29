@@ -1,0 +1,57 @@
+.certificate-section {
+    padding: 40px 20px;
+    text-align: center;
+    /* background-color: #111; */
+  }
+  
+  .certificate-section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Grid Container */
+  .certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns for desktop */
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  /* Certificate Card */
+  .certificate-card {
+    background-color: #8a8a8a;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    /* max-width: 100%;
+    width: 100%; */
+    width: 70%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.6s ease;
+  }
+  
+  .certificate-card:hover {
+    transform: scale(1.4);
+  }
+  
+  .certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .certificate-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .certificate-grid {
+      grid-template-columns: 1fr; /* One column on mobile */
+    }
+  }
+  
